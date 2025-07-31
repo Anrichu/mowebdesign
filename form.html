@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML &lt;form&gt; Tag Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f9ff;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    pre {
+      background-color: #eef3f9;
+      padding: 10px;
+      border-left: 4px solid #3498db;
+      font-family: "Courier New", monospace;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML &lt;form&gt; Tag Example (Application Form)</h1>
+
+  <h2>HTML Code:</h2>
+  <pre>
+&lt;form action="#" method="post"&gt;
+  Name: &lt;input type="text" name="name"&gt;
+
+  Email: &lt;input type="email" name="email"&gt;
+
+  Gender:
+  &lt;input type="radio" name="gender" value="Male"&gt; Male
+  &lt;input type="radio" name="gender" value="Female"&gt; Female
+
+  Course:
+  &lt;select name="course"&gt;
+    &lt;option value="bca"&gt;BCA&lt;/option&gt;
+    &lt;option value="bsc"&gt;B.Sc&lt;/option&gt;
+    &lt;option value="msc"&gt;M.Sc&lt;/option&gt;
+  &lt;/select&gt;
+
+  Comments:
+  &lt;textarea name="comments"&gt;&lt;/textarea&gt;
+
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+  </pre>
+
+  <hr style="border: none; height: 2px; background-color: #3498db; margin: 30px 0;">
+
+  <h2>Output in Browser:</h2>
+
+  <form action="#" method="post">
+    <label>Name:</label>
+    <input type="text" name="name">
+
+    <label>Email:</label>
+    <input type="email" name="email">
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+
+    <br><br>
+    <label>Course:</label>
+    <select name="course">
+      <option value="bca">BCA</option>
+      <option value="bsc">B.Sc</option>
+      <option value="msc">M.Sc</option>
+    </select>
+
+    <label>Comments:</label>
+    <textarea name="comments" rows="4"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <p><strong>Note:</strong> The <code>&lt;form&gt;</code> tag is used to collect user input. It contains fields like <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;textarea&gt;</code>.</p>
+
+</body>
+</html>
